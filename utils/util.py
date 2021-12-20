@@ -3,14 +3,14 @@ import copy
 import datetime
 import gc
 import time
-
-# import torch
+import logging
 import numpy as np
 
-from .logconf import logging
+# Set logger
+logging.basicConfig(format='[%(asctime)s %(levelname)s] %(message)s', datefmt='%d %b %Y %H:%M')
 log = logging.getLogger(__name__)
-# log.setLevel(logging.WARN)
-# log.setLevel(logging.INFO)
+log.setLevel(logging.WARN)
+log.setLevel(logging.INFO)
 log.setLevel(logging.DEBUG)
 
 IrcTuple = collections.namedtuple('IrcTuple', ['index', 'row', 'col'])
