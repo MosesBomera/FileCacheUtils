@@ -11,6 +11,7 @@ log.setLevel(logging.INFO)
 log.setLevel(logging.DEBUG)
 
 # Cache Directory
+# Currently using on kaggle.
 cache_dir  = '/kaggle/working'
 
 
